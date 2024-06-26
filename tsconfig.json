@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "plugins": [{ "name": "typescript-plugin-css-modules" }],
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "jsx": "react-jsx",
+        "forceConsistentCasingInFileNames": true,
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "composite": false,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "target": "es2022",
+        "verbatimModuleSyntax": true,
+        "allowJs": true,
+        "resolveJsonModule": true,
+        "moduleDetection": "force",
+        "moduleResolution": "node",
+        "module": "ESNext",
+        "noEmit": true,
+        "outDir": "dist",
+        "typeRoots": ["./src/types", "./node_modules/@types", "**/*.d.ts"],
+        "baseUrl": ".",
+        "paths": {
+            "*": ["./@mf-types/*"]
+        }
+    },
+    "include": ["src/**/*", "src/**/*.json"],
+    "exclude": ["node_modules", "webpack.config.cjs", "jest.config.cjs", "jest.polyfills.cjs"]
+}
